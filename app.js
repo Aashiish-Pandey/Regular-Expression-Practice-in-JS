@@ -12,9 +12,11 @@ let re ;
 
  re = /^hello$/i // begin and end with
 
+ re = /H.llo/ // matches any on char
+
  // string to match
 
- const str = "Hello"
+ const str = "HKllo"
 
  // log results
 
