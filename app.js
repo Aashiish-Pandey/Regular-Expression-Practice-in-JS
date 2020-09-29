@@ -14,9 +14,11 @@ let re ;
 
  re = /H.llo/ // matches any on char
 
+ re = /H*llo/ // any char 0 or more times
+
  // string to match
 
- const str = "HKllo"
+ const str = "HKKKKKKKKKKKKllo"
 
  // log results
 
