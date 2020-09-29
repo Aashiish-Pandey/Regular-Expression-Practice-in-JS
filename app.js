@@ -10,9 +10,11 @@ let re ;
 
  re = / world$/i // must end with
 
+ re = /^hello$/i // begin and end with
+
  // string to match
 
- const str = "Hello world"
+ const str = "Hello"
 
  // log results
 
