@@ -19,8 +19,7 @@ let re ;
  re = /gre?a?y/ //optional char
 
 
-
- // Brackets [] - character Sets
+// Brackets [] - character Sets
 
  re = /gr[ae]y/i  // must be a or e
  re = /[GF]ray/i  // must be G or F
@@ -48,9 +47,34 @@ let re ;
  re = /([0-9]x){3}$/
 
 
+
+ 
+ // short hand  Character classes
+
+ re = /\w/ ; // word character , alphanumeric  or _ 
+ re = /\w/ ; // word character  , alphanumeric  or _  one or more
+ 
+ re = /\W/ ; //  non word character  , alphanumeric  or _  
+
+ re = /\d/;  // match any digit
+ re = /\d+/;  // match any digit  0 or more times
+
+ re = /\D/; // match any non digit
+
+ re = /\s/ ; // match whitespace char
+
+ re = /\S/ ; // match non whitespace char
+
+ re = /hell\b/i  // word boundry
+
+ re = /x(?=y)/  // match x only if followed by y
+
+
+
+
  // string to match
 
- const str = "0x1x7x"
+ const str = "hello to hell"
 
  // log results
 
