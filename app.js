@@ -8,6 +8,8 @@ let re ;
 
  re = /^h/i;  // must start with
 
+ re = / world$/i // must end with
+
  // string to match
 
  const str = "Hello world"
