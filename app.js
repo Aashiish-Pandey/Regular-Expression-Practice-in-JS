@@ -16,9 +16,11 @@ let re ;
 
  re = /H*llo/ // any char 0 or more times
 
+ re = /gre?a?y/ //optional char
+
  // string to match
 
- const str = "HKKKKKKKKKKKKllo"
+ const str = "gry"
 
  // log results
 
