@@ -18,9 +18,39 @@ let re ;
 
  re = /gre?a?y/ //optional char
 
+
+
+ // Brackets [] - character Sets
+
+ re = /gr[ae]y/i  // must be a or e
+ re = /[GF]ray/i  // must be G or F
+ re = /[^GF]ray/i  // match anything  except  a G or F
+ re = /^[GF]ray/i  // should start with G or F
+
+ re = /[A-Z]ray/ // match any upper case letter
+
+ re = /[a-z]ray/ // match any lower case letter
+
+ re = /[A-Za-z]ray/ // match any uppercase and lower case letter
+
+ re = /[0-9]ray/  // match any digit
+
+
+ // Braces {} - Quantifiers 
+
+ re = /Hel{2}o/i  // must occur  exactly {m} times
+ re = /Hel{2,4}o/i  // must occur   {m to n } times
+ re = /Hel{2,}o/i  // must occur   atlest  {m } times
+
+
+ // Paraenthesis () for grouping 
+
+ re = /([0-9]x){3}$/
+
+
  // string to match
 
- const str = "gry"
+ const str = "0x1x7x"
 
  // log results
 
