@@ -1,46 +1,31 @@
-let re 
-re =  /hello/
-re = /hello/i //  i = case insensitive
-// re = /hello/g  g = global search
+let re ;
+//literal characters
+ re = /hello/
 
-//console.log(re)
-//console.log(re.source)
+ re = /hello/i
 
-// exec() return result in an array or null
+ // Metacharacter symbols
 
-// let result = re.exec("hello ashish")
-// console.log(result)
-// console.log(result[0])
+ re = /^h/i;  // must start with
 
-////////////////////////////////////////////////////////////////////////
+ // string to match
 
-// test() returns true or false  
+ const str = "Hello world"
 
-// const result = re.test("hello")
-// console.log(result)
+ // log results
 
-///////////////////////////////////////////////////////////////////////
+ const  result = re.exec(str);
+ console.log(result);
 
-// match() - Return result  array or null
+ function reTest(re,str) {
 
-// const str = "hello there"
-// const result = str.match(re)
-// console.log(result)
+    if(re.test(str)) {
 
-///////////////////////////////////////////////////////////////////////////
+        console.log(`${str} matches ${re.source}`);
+    } else {
+        console.log(`${str} does not match ${re.source}`);
+    }
+ }
 
-// search() returns index of first match, if not found return -1
-
-// const str = "hello there"
-// const result = str.search(re)
-// console.log(result)
-
-// replace() -  Return new string with some or all matches of a pattern 
-
-const str = "hello there"
-const result = str.replace(re, "hi")
-console.log(result)
-
-
-
+ reTest(re,str)
 
